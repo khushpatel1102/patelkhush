@@ -27,6 +27,7 @@ PAGES = [
         "links": [
             ("Indian Startup News: $8M Series A coverage", "https://indianstartupnews.com/funding/no-pitch-decks-no-investor-calls-ai-agent-sam-raises-8-million-for-lyzr-ai-check-how-10609263"),
             ("The Next Web: $100M Series B coverage", "https://thenextweb.com/news/lyzr-ai-agent-100-million-series-b"),
+            ("Watch: Behind the Scenes of Lyzr Agent Evals (YouTube)", "https://youtube.com/live/TUI_Ez-KXNs"),
             ("Mastering Evals webinar (Luma)", "https://luma.com/h7egimbm"),
         ],
     },
