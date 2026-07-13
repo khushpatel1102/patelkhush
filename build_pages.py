@@ -75,12 +75,22 @@ PAGES = [
         "links": [],
     },
     {
-        "slug": "lyzr-agent-studio-and-skott",
-        "title": "Lyzr Agent Studio &amp; Skott",
-        "tagline": "A no-code enterprise AI agent platform and an autonomous AI marketing agent.",
+        "slug": "lyzr-agent-studio",
+        "title": "Lyzr Agent Studio",
+        "tagline": "The no-code enterprise AI agent platform serving 80,000+ users.",
         "body": """
-<p>Lyzr Agent Studio is the no-code enterprise platform where teams build and deploy AI agents on the Lyzr Agent Platform, which serves 80,000+ users. Its Product Hunt launch earned 522 upvotes.</p>
-<p>Skott, built on the same stack, is an autonomous AI marketing agent that has produced over 1,000 pieces of content with no human intervention, from research through writing to publishing. Skott's own Product Hunt launch earned 424 upvotes.</p>
+<p>Lyzr Agent Studio is the no-code platform where teams build and deploy AI agents on the Lyzr Agent Platform. I am a founding engineer of the platform, which serves 80,000+ users, and its Product Hunt launch earned 522 upvotes.</p>
+<p>Enterprises use Agent Studio to build and run agents securely within their own cloud or on-premise environments, keeping full ownership of data and IP. Under the hood it integrates the platform capabilities I built: the <a href="/responsible-ai-engine/">Responsible AI engine</a> for guardrails and policy enforcement, and the <a href="/agent-simulation-engine/">Agent Simulation Engine</a> for testing agents before they reach production.</p>
+""",
+        "links": [],
+    },
+    {
+        "slug": "skott",
+        "title": "Skott",
+        "tagline": "An autonomous AI marketing agent producing content end to end with no human intervention.",
+        "body": """
+<p>Skott is an autonomous AI marketing agent built on the Lyzr agent stack. It runs the entire content pipeline itself, from research through writing to publishing, and has produced over 1,000 pieces of content with no human intervention.</p>
+<p>Skott's Product Hunt launch earned 424 upvotes, making it one of the community's most-recognized autonomous marketing agents at the time.</p>
 """,
         "links": [],
     },
@@ -97,19 +107,41 @@ PAGES = [
         ],
     },
     {
-        "slug": "opengap-gitagent-computeragent",
-        "title": "OpenGAP, GitAgent &amp; ComputerAgent",
-        "tagline": "Contributor to the open-gitagent ecosystem: a git-native standard, agent, and runtime for AI agents.",
+        "slug": "opengap",
+        "title": "OpenGAP (the Git Agent Protocol)",
+        "tagline": "A framework-agnostic, git-native open standard for defining AI agents. 2,800+ GitHub stars.",
         "body": """
-<p>I contribute to the open-gitagent ecosystem, a family of open-source projects that treat an AI agent as a git repository: identity, memory, rules, and skills are version-controlled files rather than opaque platform state.</p>
-<p>OpenGAP (the Git Agent Protocol) is the framework-agnostic standard at the center, with first-class FINRA, Federal Reserve, and SEC compliance support; it has earned 2,800+ GitHub stars. GitAgent (590+ stars) is a git-native AI agent built on the standard. ComputerAgent is a portable agent runtime and the reference implementation of the Harness Protocol.</p>
-<p>In 2026 I served on the three-member judging panel of the GitAgent Hackathon, a global virtual hackathon on the standard hosted by Lyzr AI on HackCulture with 637 registrations worldwide.</p>
+<p>OpenGAP, the Git Agent Protocol, is an open standard I contribute to that treats an AI agent as a git repository: the agent's identity, rules, skills, and tools are version-controlled files rather than opaque platform state. Any runtime that speaks the standard can bring the same agent to life.</p>
+<p>The standard has earned 2,800+ GitHub stars and includes first-class compliance support for FINRA, Federal Reserve, and SEC requirements, making it practical for regulated industries. It anchors an ecosystem that includes <a href="/gitagent/">GitAgent</a> and <a href="/computeragent/">ComputerAgent</a>.</p>
 """,
         "links": [
             ("OpenGAP on GitHub", "https://github.com/open-gitagent/opengap"),
+            ("The OpenGAP specification", "https://github.com/open-gitagent/opengap/blob/main/spec/SPECIFICATION.md"),
+        ],
+    },
+    {
+        "slug": "gitagent",
+        "title": "GitAgent",
+        "tagline": "A git-native AI agent whose identity, memory, and skills are version-controlled files. 590+ GitHub stars.",
+        "body": """
+<p>GitAgent is a git-native AI agent built on the <a href="/opengap/">OpenGAP standard</a>, and an open-source project I contribute to. An agent is defined entirely by files in a repo: a manifest (agent.yaml), its identity (SOUL.md), its hard constraints (RULES.md), and a skills directory, so the agent's whole definition is diffable, reviewable, and version-controlled like any other code. The project has earned 590+ GitHub stars.</p>
+<p>In 2026, Lyzr AI hosted the GitAgent Hackathon on HackCulture, a global virtual hackathon on the standard with 637 registrations worldwide. I served on its three-member judging panel, evaluating agent quality, skill design, working demos, and creativity.</p>
+""",
+        "links": [
             ("GitAgent on GitHub", "https://github.com/open-gitagent/gitagent"),
-            ("ComputerAgent on GitHub", "https://github.com/open-gitagent/ComputerAgent"),
             ("GitAgent Hackathon on HackCulture", "https://hackculture.io/hackathons/gitagent-hackathon"),
+        ],
+    },
+    {
+        "slug": "computeragent",
+        "title": "ComputerAgent",
+        "tagline": "A portable agent runtime and the reference implementation of the Harness Protocol.",
+        "body": """
+<p>ComputerAgent is a portable AI agent runtime in the open-gitagent ecosystem and the reference implementation of the Harness Protocol. I contribute to the project across its open-source and enterprise editions.</p>
+<p>My main contribution is its safety layer: I integrated Lyzr's <a href="/responsible-ai-engine/">Responsible AI engine</a> into both editions as a chained guardrail redaction proxy, so every agent run is policy-bound, with PII redaction, toxicity and prompt-injection detection, and pluggable policy engines enforced at the runtime boundary.</p>
+""",
+        "links": [
+            ("ComputerAgent on GitHub", "https://github.com/open-gitagent/ComputerAgent"),
         ],
     },
 ]
