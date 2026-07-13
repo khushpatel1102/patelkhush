@@ -197,6 +197,9 @@ def render(page):
   <meta property="og:url" content="{url}">
   <meta property="og:image" content="{og_image}">
   <meta name="twitter:card" content="summary">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="../style.css">
   <script type="application/ld+json">
   {json.dumps({
