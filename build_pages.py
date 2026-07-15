@@ -32,6 +32,19 @@ PAGES = [
         ],
     },
     {
+        "slug": "control-plane",
+        "title": "Agent Control Plane",
+        "tagline": "Among the first multi-cloud control planes for AI agents: one manifest, one pipeline, every cloud.",
+        "body": """
+<p>The Agent Control Plane is a system I designed and built at Lyzr that brings real deployment discipline to AI agents across clouds. It gives an organization one place to register, deploy, govern, and call its agents: an agent registry, managed credentials, and a gateway that lets any application invoke any agent on any cloud with a single token.</p>
+<p>Agents are defined by one manifest in their repo and ship through one pipeline, with keyless sign-in to each cloud and no stored cloud keys. The same agent deploys to the native agent runtimes on AWS and Google Cloud today, with Azure as the next leg. Promotion moves a pinned build through dev, staging, and production with enforced approval gates, an audit trail, and a kill switch.</p>
+<p>Microsoft independently published the same pattern as a reference architecture for its own cloud ("CI/CD for AI Agents on Microsoft Foundry", May 2026). The control plane implements that architecture across hyperscalers and runs live today; the same agent code answers from AWS and Google Cloud off one push. The system is the subject of my "CI/CD for AI Agents" session in the Lyzr Workshop Series.</p>
+""",
+        "links": [
+            ("Microsoft's reference architecture for the same pattern", "https://techcommunity.microsoft.com/blog/educatordeveloperblog/cicd-for-ai-agents-on-microsoft-foundry/4522218"),
+        ],
+    },
+    {
         "slug": "ethicaleye",
         "title": "EthicalEye",
         "tagline": "An open-source, cross-lingual AI ethics and content moderation model supporting 88 languages.",
