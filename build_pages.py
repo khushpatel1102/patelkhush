@@ -202,7 +202,7 @@ def render(page):
   {GTM}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{page['title']} | Khush Patel</title>
-  <meta name="description" content="{html.escape(desc)} By Khush Patel, AI Lead &amp; Founding Engineer at Lyzr AI.">
+  <meta name="description" content="{html.escape(desc)} By Khush Patel, Founding Architect at Lyzr AI.">
   <link rel="canonical" href="{url}">
   <meta property="og:type" content="article">
   <meta property="og:title" content="{page['title']} | Khush Patel">
@@ -225,7 +225,7 @@ def render(page):
           "@type": "Person",
           "name": "Khush Patel",
           "url": SITE + "/",
-          "jobTitle": "AI Lead & Founding Engineer at Lyzr AI",
+          "jobTitle": "Founding Architect at Lyzr AI",
       },
   }, indent=2)}
   </script>
